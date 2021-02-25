@@ -43,13 +43,6 @@ export default {
       searchValue: ''
     }
   },
-  // computed: {
-  //   searchHandler() {
-  //     return this.products.filter((product) => {
-  //       return product.title.match(this.searchValue)
-  //     })
-  //   }
-  // },
   methods: {
     ...mapActions([
       'getProducts', 'add_To_Cart'

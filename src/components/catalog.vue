@@ -74,7 +74,6 @@ export default {
     paginatedProducts() {
       let from = (this.pageNumber - 1) * this.productsPerPage
       let to = from + this.productsPerPage
-      // return this.products.slice(from, to)
       return this.productsFilter.slice(from, to)
     }
   }
