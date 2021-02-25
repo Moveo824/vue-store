@@ -6,16 +6,10 @@
         placeholder="Search..."
         v-model="searchValue"
       />
-      <!-- <el-button 
-        class="searchBtn"
-        type="primary"
-        @click="search"
-      >
-        Search
-      </el-button> -->
       <el-button
         type="success"
         icon="el-icon-s-goods"
+        class="btn-cart"
         circle
         @click="cartPage"
       >
@@ -97,5 +91,9 @@ export default {
     background: rgb(204, 199, 199);
     cursor: pointer;
     color: white;
+  }
+
+  .btn-cart {
+    margin-left: 10px;
   }
 </style>s

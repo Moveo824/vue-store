@@ -17,6 +17,7 @@
         <h2>{{ product.title }}</h2>
         {{ product.description }}
         <p><b>Rating: {{ product.rating }}</b></p>
+        <p><b>Category: {{ product.type }}</b></p>
         <el-button 
           type="success"
           @click="addToCart(product)"
@@ -68,7 +69,7 @@ export default {
     },
     productsFilter() {
       return this.products.filter((product) => {
-        return product.title.toLowerCase().match(this.searchValue.toLowerCase())
+        return product.title.toLowerCase().match(this.searchValue.toLowerCase()) || product.type.toLowerCase().match(this.searchValue.toLowerCase())
       })
     },
     paginatedProducts() {
